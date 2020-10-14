@@ -1,5 +1,4 @@
-import { openModal } from "./modal.js";
- 
+
 const addTaskBtn = () => {
     const addTaskDiv = document.createElement("div");
 
@@ -13,8 +12,6 @@ const addTaskBtn = () => {
         addTaskDiv.appendChild(buttonIcon);
         addTaskDiv.appendChild(button);
     })();
-
-    addTaskDiv.addEventListener("click", openModal);
     
     return addTaskDiv;
 }

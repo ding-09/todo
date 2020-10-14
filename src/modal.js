@@ -1,3 +1,5 @@
+import { addTaskForm } from "./add-task-form";
+
 // create modal 
 const createModal = () => {
     const modalBg = document.createElement("div");
@@ -5,18 +7,14 @@ const createModal = () => {
 
     const modalContent = document.createElement("div");
     modalContent.setAttribute = ("id", "modal-content");
+
+    const form = addTaskForm();
+    modalContent.appendChild(form);
+
     modalBg.appendChild(modalContent);
 
 
     return modalBg;
 }
 
-const openModal = () => {
-    
-}
-
-const closeModal = () => {
-
-}
-
-export { createModal, openModal, closeModal }
+export { createModal }

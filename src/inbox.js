@@ -1,4 +1,5 @@
 import { addTaskBtn } from "./add-task-btn.js";
+import { createMoadl, createModal } from "./modal.js";
 
 const inbox = () => {
     const inboxPage = document.createElement("div");
@@ -11,6 +12,8 @@ const inbox = () => {
     inboxPage.appendChild(title);
 
     // flexbox of items 
+    const modal = createModal();
+    inboxPage.appendChild(modal);
 
     // add task bar 
     const addTaskBar = addTaskBtn();
